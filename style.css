@@ -91,6 +91,9 @@ body {
   margin-top: 20px;
   margin-bottom: -10px;
 }
+.annual_text img {
+  margin-left: 10px;
+}
 .change {
   margin-left: auto;
   margin-right: 20px;
