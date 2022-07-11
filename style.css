@@ -102,15 +102,22 @@ body {
   color: var(--btn_bg);
   font-weight: 700;
 }
+.change:hover {
+  opacity: 0.7;
+}
 .text_box button {
   width: 85%;
   height: 60px;
+  cursor: pointer;
   border: none;
   background: var(--btn_bg);
   color: white;
   border-radius: 15px;
   font-size: 1.2em;
   font-weight: 700;
+}
+.text_box button:hover {
+  opacity: 0.7;
 }
 .text_box a {
   margin-bottom: 30px;
@@ -119,6 +126,9 @@ body {
   color: var(--paragraph);
   font-weight: 700;
   font-size: 1.2em;
+}
+.text_box a:hover {
+  color: var(--headings);
 }
 
 @media screen and (max-width: 500px) {
