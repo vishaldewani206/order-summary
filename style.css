@@ -1,0 +1,134 @@
+:root {
+  --bg: hsl(225, 100%, 94%);
+  --annual_bg: hsl(225, 100%, 98%);
+  --btn_bg: hsl(245, 75%, 52%);
+  --headings: hsl(223, 47%, 23%);
+  --paragraph: hsl(224, 23%, 55%);
+}
+* {
+  font-family: 'Red Hat Display', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.main_container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg_images {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+}
+.bg_m {
+  display: none;
+}
+.main_box {
+  z-index: 1;
+  height: 85%;
+  width: 30%;
+  max-width: 400px;
+  min-width: 330px;
+  max-height: 800px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.text_box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 68%;
+}
+.text_box h1 {
+  color: var(--headings);
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.text_box p {
+  text-align: center;
+  color: var(--paragraph);
+  margin-top: 10px;
+  line-height: 170%;
+  font-weight: 500;
+  width: 80%;
+  margin-bottom: 30px;
+}
+.annual_plan {
+  display: flex;
+  margin-bottom: 30px;
+
+  align-items: center;
+  border-radius: 20px;
+  width: 85%;
+  height: 80px;
+  background: var(--annual_bg);
+}
+.annual_text {
+  margin-left: 20px;
+}
+.annual_text h3 {
+  color: var(--headings);
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+.change {
+  margin-left: auto;
+  margin-right: 20px;
+}
+.change a {
+  color: var(--btn_bg);
+  font-weight: 700;
+}
+.text_box button {
+  width: 85%;
+  height: 60px;
+  border: none;
+  background: var(--btn_bg);
+  color: white;
+  border-radius: 15px;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.text_box a {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-decoration: none;
+  color: var(--paragraph);
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 500px) {
+  .main_container {
+    height: 100%;
+  }
+  .main_box {
+    margin: 50px;
+  }
+  .bg_m {
+    display: block;
+  }
+  .bg_d {
+    display: none;
+  }
+}

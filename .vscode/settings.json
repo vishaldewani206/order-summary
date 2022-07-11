@@ -1,0 +1,7 @@
+{
+  "css.completion.completePropertyWithSemicolon": true,
+  "scss.completion.completePropertyWithSemicolon": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "less.completion.completePropertyWithSemicolon": true,
+  "prettier.semi": true
+}
